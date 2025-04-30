@@ -14,8 +14,8 @@ warnings.filterwarnings("ignore")
 logging.getLogger("transformers").setLevel(logging.ERROR)
 
 st.set_page_config(
-    page_title="RagBot!")
-
+    page_title="RagBot!",     
+)
 st.markdown(
     """
     <style>
@@ -33,10 +33,10 @@ st.markdown(
         border-radius: 20px;
         margin: 3rem 0 1rem 0;
         display: flex;
-        justify-content: center;   /* center text horizontally */
-        align-items: center;       /* center text vertically */
+        justify-content: center;
+        align-items: center;
         width: fit-content;
-        height: 60px;              /* fixed height for vertical alignment */
+        height: 60px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     }
 
@@ -52,8 +52,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Use this for your custom title
+# Add this for the title bubble:
 st.markdown('<div class="custom-bubble"><h1>How can I help you</h1></div>', unsafe_allow_html=True)
+
 
 
 # Step 1: Upload PDFs + wait for submit
